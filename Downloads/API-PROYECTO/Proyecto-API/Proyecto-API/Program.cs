@@ -1,4 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Proyecto_API.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ProductosContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 // Add services to the container.
 
