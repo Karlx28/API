@@ -5,8 +5,6 @@ using Proyecto_API.Repositories;
 
 namespace Proyecto_API.Controllers
 {
-    public class ProductosController
-    {
         [Route("api/[controller]")]
         [ApiController]
         public class ProductosController : ControllerBase
@@ -101,5 +99,4 @@ namespace Proyecto_API.Controllers
                 }
             }
         }
-    }
 }
